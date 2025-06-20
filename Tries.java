@@ -2,10 +2,10 @@
  * Leetcode 208. Implement Trie (Prefix Tree)
  * Link: https://leetcode.com/problems/implement-trie-prefix-tree/description/
  */
-public class Trie {
+public class Tries {
     private TrieNode root;
 
-    public Trie() {
+    public Tries() {
         this.root = new TrieNode();
     }
 
@@ -57,13 +57,13 @@ public class Trie {
         }
         return curr;
     }
-}
 
-class TrieNode {
-    boolean isWord;
-    TrieNode[] children;
+    class TrieNode {
+        boolean isWord;
+        TrieNode[] children;
 
-    public TrieNode() {
-        this.children = new TrieNode[26];
+        public TrieNode() {
+            this.children = new TrieNode[26];
+        }
     }
 }
